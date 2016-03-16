@@ -9,9 +9,9 @@ class Home extends Controller
     $data = array(
       'content' => 'TEST CONTENT'
     );
-    $this->view->render('template/header', $data_header);
-    $this->view->render('main', $data);
-    $this->view->render('template/footer');
+    $this->load->view('template/header', $data_header);
+    $this->load->view('main', $data);
+    $this->load->view('template/footer');
   }
 }
 ?>
